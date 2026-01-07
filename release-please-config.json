@@ -24,7 +24,7 @@
     "pull-request-title-pattern": "MCU Release${component} ${version}",
     "pull-request-header": ":robot: The CI Pipeline has created a new MCU Release PR! :rocket:",
     "changelog-sections": [
-        {"type":"chore", "scope": "release", "section":"Release", "hidden":false},
+        {"type":"release", "section":"Release Management Version", "hidden":false},
         {"type":"feat", "section":"Features", "hidden":false},
         {"type":"fix", "section":"Bug Fixes", "hidden":false},
         {"type":"perf", "section":"Performance Improvements", "hidden":false},
