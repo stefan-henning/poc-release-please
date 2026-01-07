@@ -12,6 +12,16 @@
             "jsonpath": "$.version"
         },
         {
+            "type": "json",
+            "path": "ui/package-lock.json",
+            "jsonpath": "$.version"
+        },
+        {
+            "type": "json",
+            "path": "ui/package-lock.json",
+            "jsonpath": "$.packages[''].version"
+        },
+        {
             "type": "toml",
             "path": "mcu/pyproject.toml",
             "jsonpath": "$.project.version"
@@ -21,7 +31,7 @@
     "release-search-depth": 100,
     "include-component-in-tag": false,
     "release-type": "simple",
-    "pull-request-title-pattern": "chore(release): MCU ${component} ${version}",
+    "pull-request-title-pattern": "MCU Release${component} ${version}",
     "pull-request-header": ":robot: The CI Pipeline has created a new MCU Release PR! :rocket:",
     "changelog-sections": [
         {"type":"release", "section":"Release Management Version", "hidden":false},
