@@ -1,5 +1,41 @@
 # Changelog
 
+## [2.0.0](https://github.com/stefan-henning/poc-release-please/compare/v1.0.8...v2.0.0) (2026-01-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* use JavaScript features not available in Node 6.
+
+### Release Management Version
+
+* 26.04.00 ([840a7f7](https://github.com/stefan-henning/poc-release-please/commit/840a7f7843c547d6ba8f0dae0fc32661416bd041))
+
+
+### Features
+
+* added a new classification benchmark ([0de7fe6](https://github.com/stefan-henning/poc-release-please/commit/0de7fe6aaea11401bdaf9e3a287702cfa871dd21))
+
+
+### Performance Improvements
+
+* increased file upload speed by 10x ([121431a](https://github.com/stefan-henning/poc-release-please/commit/121431a6af83905c4ac1a27e141cc7e848967715))
+
+
+### Documentation
+
+* added instructions on server setup ([f9ad309](https://github.com/stefan-henning/poc-release-please/commit/f9ad3092f94334e39ff35c51a78df351e2ebe3cb))
+
+
+### Miscellaneous Chores
+
+* drop support for Node 6 ([2e6e308](https://github.com/stefan-henning/poc-release-please/commit/2e6e308cf4db6b8cd67d8df296cddd67522fb9e7))
+
+
+### Code Refactoring
+
+* clean up code for better readability ([c05900d](https://github.com/stefan-henning/poc-release-please/commit/c05900d77516ec6bcbe3ad9b811dfae25ffd1ccb))
+
 ## [1.0.8](https://github.com/stefan-henning/poc-release-please/compare/v1.0.7...v1.0.8) (2026-01-07)
 
 
