@@ -9,7 +9,7 @@ env:
   VERSION_NUMBER: "VERSION_FILE_PARSING_ERROR"
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 jobs:
