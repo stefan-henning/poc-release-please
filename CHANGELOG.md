@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.0.6](https://github.com/stefan-henning/poc-release-please/compare/v1.0.5...v1.0.6) (2026-01-07)
+
+
+### Version Bump
+
+* release version 26.01.02 ([0a060ed](https://github.com/stefan-henning/poc-release-please/commit/0a060ed9874633595adf01398ed1694e66640ee1))
+
+
+### Miscellaneous Chores
+
+* see if this takes effect and creates PR ([32db308](https://github.com/stefan-henning/poc-release-please/commit/32db308b1eab86ef555de904604823c05baf0a86))
+
+
+### Code Refactoring
+
+* remove the env variable from the action ([c5a20f9](https://github.com/stefan-henning/poc-release-please/commit/c5a20f97b224dc5fa3395eb5a04e8a549ea20106))
+
 ## [1.0.5](https://github.com/stefan-henning/poc-release-please/compare/v1.0.4...v1.0.5) (2026-01-07)
 
 
