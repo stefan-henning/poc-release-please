@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.8](https://github.com/stefan-henning/poc-release-please/compare/v1.0.7...v1.0.8) (2026-01-07)
+
+
+### Release Management Version
+
+* 26.02.01 ([a9b8186](https://github.com/stefan-henning/poc-release-please/commit/a9b818687ea846849c3d3a1835b3e39a2cd280e2))
+
+
+### Miscellaneous Chores
+
+* **release:** 26.02.00 ([f7745cb](https://github.com/stefan-henning/poc-release-please/commit/f7745cbaa445dea5520c062e2d47dcf57c748e8d))
+
+
+### Code Refactoring
+
+* change the type for release commits ([67bb1aa](https://github.com/stefan-henning/poc-release-please/commit/67bb1aa54fe5a98d637b27601cdebca2ffcd3941))
+* changing our conventional commit sections for changelog ([17ac81d](https://github.com/stefan-henning/poc-release-please/commit/17ac81d786c972f7de4639466d60ae80cbb29cb5))
+
 ## [1.0.7](https://github.com/stefan-henning/poc-release-please/compare/v1.0.6...v1.0.7) (2026-01-07)
 
 
