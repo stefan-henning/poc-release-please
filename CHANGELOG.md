@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.2](https://github.com/stefan-henning/poc-release-please/compare/v2.0.1...v2.0.2) (2026-01-07)
+
+
+### Miscellaneous Chores
+
+* add new feature ([#12](https://github.com/stefan-henning/poc-release-please/issues/12)) ([be06890](https://github.com/stefan-henning/poc-release-please/commit/be068907bde6f3246ed27d77fd96df3c79fb6295))
+* this is important ([d090728](https://github.com/stefan-henning/poc-release-please/commit/d090728556e8833908980883fd65a10d501d9119))
+* trying if fails without component ([7f061ae](https://github.com/stefan-henning/poc-release-please/commit/7f061ae0dbbad040df981a06571b026eff355ed0))
+
+
+### Continuous Integration
+
+* changes to PR title pattern ([01b7dad](https://github.com/stefan-henning/poc-release-please/commit/01b7dadf9a062fbf25fd77fefb1dede03513bd93))
+
 ## [2.0.1](https://github.com/stefan-henning/poc-release-please/compare/v2.0.0...v2.0.1) (2026-01-07)
 
 
