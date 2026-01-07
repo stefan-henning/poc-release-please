@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.1](https://github.com/stefan-henning/poc-release-please/compare/v2.0.0...v2.0.1) (2026-01-07)
+
+
+### Bug Fixes
+
+* npm install without package.json in root ([d6a10cf](https://github.com/stefan-henning/poc-release-please/commit/d6a10cf08504be36d030fc86b1e289ba489a5338))
+
+
+### Miscellaneous Chores
+
+* change PR title ([0bff6a4](https://github.com/stefan-henning/poc-release-please/commit/0bff6a4d220c135a6c036f8e2224aca18b67003b))
+* change PR title pattern again ([670f13a](https://github.com/stefan-henning/poc-release-please/commit/670f13acc155ff2f7d0fbd9b20db125fec573ad2))
+* change the job name ([4fc628d](https://github.com/stefan-henning/poc-release-please/commit/4fc628d318f35ba383eefa60361e086cf7918e4b))
+* check if this now runs successfully ([15d982d](https://github.com/stefan-henning/poc-release-please/commit/15d982d3c6799c3329b862ef4b60dd7c66784f99))
+* relax casing in commitlint ([4c1357b](https://github.com/stefan-henning/poc-release-please/commit/4c1357bb33d801f2d9c8a7abc41abff50e0d5eb9))
+
 ## [2.0.0](https://github.com/stefan-henning/poc-release-please/compare/v1.0.8...v2.0.0) (2026-01-07)
 
 
