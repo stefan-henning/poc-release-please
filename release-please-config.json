@@ -1,0 +1,27 @@
+{
+    "packages": {
+        ".": {
+            "release-type": "simple",
+            "package-name": "release-please-action"
+        }
+    },
+    "extra-files": [
+        {
+            "type": "json",
+            "path": "ui/package.json",
+            "jsonpath": "$.version"
+        },
+        {
+            "type": "toml",
+            "path": "mcu/pyproject.toml",
+            "jsonpath": "$.project.version"
+        }
+    ],
+    "commit-search-depth": 100,
+    "release-search-depth": 100,
+    "include-component-in-tag": false,
+    "release-type": "simple",
+    "pull-request-title-pattern": "MCU Release${component} ${version}",
+    "pull-request-header": ":robot: The CI Pipeline has created a new MCU Release PR! :rocket:",
+    "changelog-sections": [{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"perf","section":"Performance Improvements","hidden":false},{"type":"deps","section":"Dependencies","hidden":false},{"type":"revert","section":"Reverts","hidden":false},{"type":"doc","section":"Documentation","hidden":false},{"type":"style","section":"Styles","hidden":false},{"type":"chore","section":"Miscellaneous Chores","hidden":false},{"type":"refactor","section":"Code Refactoring","hidden":false},{"type":"test","section":"Tests","hidden":false},{"type":"build","section":"Build System","hidden":false},{"type":"ci","section":"Continuous Integration","hidden":false}]
+}

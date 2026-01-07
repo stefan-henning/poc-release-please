@@ -1,0 +1,82 @@
+name: release-please
+
+on: 
+  push:
+    branches:
+      - main
+
+env:
+  VERSION_NUMBER: "VERSION_FILE_PARSING_ERROR"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      prs_created: ${{ steps.release.outputs.prs_created }}
+      prs: ${{ steps.release.outputs.prs }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - id: release
+        uses: googleapis/release-please-action@v4
+        with:
+          token: ${{ secrets.RELEASE_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+          target-branch: main
+
+  # update-version-file:
+  #   needs: release-please
+  #   if: needs.release-please.outputs.prs_created == 'true'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+
+  #     - name: Extract release PR branch
+  #       id: extract-branch
+  #       run: |
+  #         PRS_JSON='${{ needs.release-please.outputs.prs }}'
+  #         echo "PRS JSON: $PRS_JSON"
+  #         BRANCH=$(echo "$PRS_JSON" | jq -r '.[0].headBranchName')
+  #         echo "RELEASE_PR_BRANCH=$BRANCH" >> "$GITHUB_OUTPUT"
+
+  #     - name: Update VERSION file
+  #       run: |
+  #         echo "The previous version of the MCU was $(cat VERSION)."
+
+  #         # Set the release PR branch
+  #         RELEASE_PR_BRANCH="${{ steps.extract-branch.outputs.RELEASE_PR_BRANCH }}"
+  #         echo "Switching to Release branch: $RELEASE_PR_BRANCH (if it exists, exiting otherwise)"
+
+  #         # Check if the remote branch exists
+  #         if ! git ls-remote --exit-code origin "$RELEASE_PR_BRANCH" > /dev/null 2>&1; then
+  #           echo "Branch $RELEASE_PR_BRANCH does not exist. Likely because you have merged the Release PR. Exiting the script with a successful exit code (0)"
+  #           exit 0
+  #         fi
+
+  #         # Fetch and switch to the release PR branch
+  #         git fetch origin "$RELEASE_PR_BRANCH:$RELEASE_PR_BRANCH"
+  #         git switch "$RELEASE_PR_BRANCH"
+
+  #         echo "Changing the date-part of the version in the VERSION file..."
+  #         year=$(date +%Y)
+  #         month=$(date +%m)
+  #         date_version="${year: -2}.${month}"
+  #         echo "Marketing Version before change was: $(cat VERSION)"
+  #         sed -i "s/[0-9]\{2\}\.[0-9]\{2\}/$date_version/" VERSION
+  #         echo "Marketing Version is now: $(cat VERSION)"
+  #         echo "Since we don't always have steps.release.outputs (e.g. on updating a PR) with the version number, we instead read it from the package.json file that was updated in the previous step"
+  #         version_str="$(cat client/package.json | jq -r '.version')"
+  #         sed -i "s/([^)]*)/($version_str)/" VERSION
+  #         echo "Final version that will be committed to git: $(cat VERSION)"
+  #         git config --global user.email "talos@fusiongbs.com"
+  #         git config --global user.name "Talos Release Bot"
+  #         git add VERSION
+  #         echo "Only running git commit, if there are changes to the version file"
+  #         git diff-index --quiet HEAD || git commit -m "chore: change date part of the VERSION"
+  #         git push --set-upstream origin "$RELEASE_PR_BRANCH"
