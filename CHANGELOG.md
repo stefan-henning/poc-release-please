@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/stefan-henning/poc-release-please/compare/v1.0.2...v1.0.3) (2026-01-07)
+
+
+### Miscellaneous Chores
+
+* trying this new option ([71b41f0](https://github.com/stefan-henning/poc-release-please/commit/71b41f0f9b994323396ac4fa2e54a614574821e6))
+
 ## [1.0.2](https://github.com/stefan-henning/poc-release-please/compare/v1.0.1...v1.0.2) (2026-01-07)
 
 
