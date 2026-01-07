@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.5](https://github.com/stefan-henning/poc-release-please/compare/v1.0.4...v1.0.5) (2026-01-07)
+
+
+### Version Bump
+
+* release version 26.01.01 ([5ed0174](https://github.com/stefan-henning/poc-release-please/commit/5ed017453261662395c8d97ec40e1af73865bd2b))
+
+
+### Miscellaneous Chores
+
+* add version bump custom commit section ([f188628](https://github.com/stefan-henning/poc-release-please/commit/f1886288a1992616d759c27f122f8e8f2111af47))
+
 ## [1.0.4](https://github.com/stefan-henning/poc-release-please/compare/v1.0.3...v1.0.4) (2026-01-07)
 
 
