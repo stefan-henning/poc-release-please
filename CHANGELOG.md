@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/stefan-henning/poc-release-please/compare/v2.0.2...v2.1.0) (2026-01-09)
+
+
+### Features
+
+* new feature ([e9ec75c](https://github.com/stefan-henning/poc-release-please/commit/e9ec75c33b10c9b843e22c86065f348d235d943a))
+
+
+### Miscellaneous Chores
+
+* reset readme and main.py ([9fadec0](https://github.com/stefan-henning/poc-release-please/commit/9fadec0b6e7a95b0551320fe248faeab7d73a9e0))
+
 ## [2.0.2](https://github.com/stefan-henning/poc-release-please/compare/v2.0.1...v2.0.2) (2026-01-07)
 
 
