@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/stefan-henning/poc-release-please/compare/v1.0.0...v1.0.1) (2026-01-09)
+
+
+### Documentation
+
+* some change here ([0bfbfd4](https://github.com/stefan-henning/poc-release-please/commit/0bfbfd4453386d929cca52712ce7312e84f3bd8b))
+
 ## [1.0.0](https://github.com/stefan-henning/poc-release-please/compare/v0.1.0...v1.0.0) (2026-01-09)
 
 
