@@ -164,26 +164,3 @@
 ### Code Refactoring
 
 * remove the env variable from the action ([c5a20f9](https://github.com/stefan-henning/poc-release-please/commit/c5a20f97b224dc5fa3395eb5a04e8a549ea20106))
-
-## [1.0.5](https://github.com/stefan-henning/poc-release-please/compare/v1.0.4...v1.0.5) (2026-01-07)
-
-
-### Version Bump
-
-* release version 26.01.01 ([5ed0174](https://github.com/stefan-henning/poc-release-please/commit/5ed017453261662395c8d97ec40e1af73865bd2b))
-
-
-### Miscellaneous Chores
-
-* add version bump custom commit section ([f188628](https://github.com/stefan-henning/poc-release-please/commit/f1886288a1992616d759c27f122f8e8f2111af47))
-
-## [1.0.4](https://github.com/stefan-henning/poc-release-please/compare/v1.0.3...v1.0.4) (2026-01-07)
-
-
-### Miscellaneous Chores
-
-* check if that was the issue ([f04bfc3](https://github.com/stefan-henning/poc-release-please/commit/f04bfc30e59bd8533baf294e5ff97ce5fdd63d6a))
-* is this option needed? ([ece7955](https://github.com/stefan-henning/poc-release-please/commit/ece795524ca93a68bd57e0f8c9af1e16e1757313))
-* no changelog existing ([3b13db8](https://github.com/stefan-henning/poc-release-please/commit/3b13db853fae7f750d8f500bc13556a736441215))
-* try this ([97584f1](https://github.com/stefan-henning/poc-release-please/commit/97584f12b95dc9be67dae784867af8723e650449))
-* trying these settings ([f85e6f0](https://github.com/stefan-henning/poc-release-please/commit/f85e6f0f9d28f1e6626496a0e77b1c684ee1bab7))
