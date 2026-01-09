@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.1](https://github.com/stefan-henning/poc-release-please/compare/v2.2.0...v2.2.1) (2026-01-09)
+
+
+### Reverts
+
+* add main back ([ba35f39](https://github.com/stefan-henning/poc-release-please/commit/ba35f3953b978fb12f08d984997973c97cb0a843))
+
+
+### Documentation
+
+* remove some changelog sections ([89a4091](https://github.com/stefan-henning/poc-release-please/commit/89a40917f22f94f88519356e01d36b8d1d7f8018))
+
 ## [2.2.0](https://github.com/stefan-henning/poc-release-please/compare/v2.1.0...v2.2.0) (2026-01-09)
 
 
