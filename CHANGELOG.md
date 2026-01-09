@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.2.0](https://github.com/stefan-henning/poc-release-please/compare/v2.1.0...v2.2.0) (2026-01-09)
+
+
+### Release Management Version
+
+* 26.09.00 ([2e26fee](https://github.com/stefan-henning/poc-release-please/commit/2e26fee6141b4f8e5f77757d99682af9af033edd))
+
+
+### Features
+
+* this adds the new feature ([#15](https://github.com/stefan-henning/poc-release-please/issues/15)) ([576fa53](https://github.com/stefan-henning/poc-release-please/commit/576fa538fe078bcaabf2742d2adb4e174f6b56ec))
+
+
+### Documentation
+
+* added some more doc ([3699c2c](https://github.com/stefan-henning/poc-release-please/commit/3699c2c98104867ed757aee724b3a3a9bf943114))
+
 ## [2.1.0](https://github.com/stefan-henning/poc-release-please/compare/v2.0.2...v2.1.0) (2026-01-09)
 
 
