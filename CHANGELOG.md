@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/stefan-henning/poc-release-please/compare/v2.0.0...v2.0.1) (2026-01-09)
+
+
+### Miscellaneous Chores
+
+* restore main.py ([9315b75](https://github.com/stefan-henning/poc-release-please/commit/9315b753cc3accaa83849fa984d692998b3a21a0))
+
 ## [2.0.0](https://github.com/stefan-henning/poc-release-please/compare/v1.0.0...v2.0.0) (2026-01-09)
 
 
