@@ -30,15 +30,17 @@ jobs:
       - name: Sync Lockfiles & Push
         if: ${{ steps.release.outputs.pr }}
         run: |
-          # 1. Obtener el nombre de la rama del PR creado por release-please
+          # 1. Extraer nombre de la rama
           PR_BRANCH=$(echo '${{ steps.release.outputs.pr }}' | jq -r '.headBranchName')
           
-          # 2. Cambiar a esa rama
-          git checkout $PR_BRANCH
-
-          # 3. Configurar Git
+          # 2. Configurar Git
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 3. Traer cambios remotos y saltar a la rama
+          git fetch origin $PR_BRANCH
+          git checkout $PR_BRANCH
+          git pull origin $PR_BRANCH  # Aseguramos que tenemos los últimos commits del bot
 
           # 4. Sincronizar uv (Python)
           curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -48,10 +50,12 @@ jobs:
           # 5. Sincronizar npm (UI)
           cd ui && npm install --package-lock-only && cd ..
 
-          # 6. Commit y Push si hay cambios
+          # 6. Commit y Push con rebase preventivo
           git add **/uv.lock **/package-lock.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: update lockfiles for version bump"
+            # Usamos --rebase por si el bot hizo cambios mientras corríamos el lock
+            git pull --rebase origin $PR_BRANCH
             git push origin $PR_BRANCH
           else
             echo "No lockfile changes detected."
