@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.1](https://github.com/stefan-henning/poc-release-please/compare/v2.0.0...v2.0.1) (2026-01-28)
+
+
+### Miscellaneous Chores
+
+* restore main.py ([9315b75](https://github.com/stefan-henning/poc-release-please/commit/9315b753cc3accaa83849fa984d692998b3a21a0))
+* this should work ([1f37342](https://github.com/stefan-henning/poc-release-please/commit/1f3734222f557b69aac8f1ee24c86fa326c27b86))
+
+
+### Continuous Integration
+
+* add lockfile sync correctly with fetch ([9a342da](https://github.com/stefan-henning/poc-release-please/commit/9a342da00d25c3723d1fe3cb837a6930effcc5be))
+* check if this works ([dd4a7b8](https://github.com/stefan-henning/poc-release-please/commit/dd4a7b8acf33bc7d51d810ab4818be6be89b76fd))
+* include uv lock in search ([f6ff6ca](https://github.com/stefan-henning/poc-release-please/commit/f6ff6ca72317d86e0864e0267ee5e64d264ff865))
+* try this string search ([bc7e83b](https://github.com/stefan-henning/poc-release-please/commit/bc7e83b191508a0f466c680c754e01f44e314bd4))
+
 ## [2.0.0](https://github.com/stefan-henning/poc-release-please/compare/v1.0.0...v2.0.0) (2026-01-09)
 
 
