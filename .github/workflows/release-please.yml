@@ -12,12 +12,12 @@ permissions:
 jobs:
   release-please:
     runs-on: ubuntu-latest
-    outputs:
-      prs_created: ${{ steps.release.outputs.prs_created }}
-      prs: ${{ steps.release.outputs.prs }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TMP_RELEASE_TOKEN }}
+          fetch-depth: 0 # Importante para tener el histórico de ramas
 
       - id: release
         uses: googleapis/release-please-action@v4
@@ -26,3 +26,33 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
           target-branch: main
+
+      - name: Sync Lockfiles & Push
+        if: ${{ steps.release.outputs.pr }}
+        run: |
+          # 1. Obtener el nombre de la rama del PR creado por release-please
+          PR_BRANCH=$(echo '${{ steps.release.outputs.pr }}' | jq -r '.headBranchName')
+          
+          # 2. Cambiar a esa rama
+          git checkout $PR_BRANCH
+
+          # 3. Configurar Git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 4. Sincronizar uv (Python)
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          export PATH="$HOME/.cargo/bin:$PATH"
+          cd mcu && uv lock && cd ..
+
+          # 5. Sincronizar npm (UI)
+          cd ui && npm install --package-lock-only && cd ..
+
+          # 6. Commit y Push si hay cambios
+          git add **/uv.lock **/package-lock.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update lockfiles for version bump"
+            git push origin $PR_BRANCH
+          else
+            echo "No lockfile changes detected."
+          fi

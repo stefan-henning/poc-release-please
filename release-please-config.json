@@ -17,19 +17,9 @@
             "jsonpath": "$.version"
         },
         {
-            "type": "json",
-            "path": "ui/package-lock.json",
-            "jsonpath": "$.packages[''].version"
-        },
-        {
             "type": "toml",
             "path": "mcu/pyproject.toml",
             "jsonpath": "$.project.version"
-        },
-        {
-            "type": "toml",
-            "path": "mcu/uv.lock",
-            "jsonpath": "$.package[?(@.name=='mcu')].version"
         }
     ],
     "commit-search-depth": 100,
