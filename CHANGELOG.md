@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.2](https://github.com/stefan-henning/poc-release-please/compare/v2.0.1...v2.0.2) (2026-01-28)
+
+
+### Documentation
+
+* make changes to readme.md ([cc4bb2f](https://github.com/stefan-henning/poc-release-please/commit/cc4bb2fd2759d68c431b7293eb23747e742b0971))
+
+
+### Miscellaneous Chores
+
+* change bot mail to ebonding ([d35342b](https://github.com/stefan-henning/poc-release-please/commit/d35342b824da4806668f2fbf95db08ed77cfd488))
+
+
+### Continuous Integration
+
+* forgot to delete package lock section entirely ([e73e570](https://github.com/stefan-henning/poc-release-please/commit/e73e570508256dbe32394cbe6395c4f6a58e386e))
+
 ## [2.0.1](https://github.com/stefan-henning/poc-release-please/compare/v2.0.0...v2.0.1) (2026-01-28)
 
 
