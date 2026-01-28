@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/stefan-henning/poc-release-please/compare/v2.0.2...v2.0.3) (2026-01-28)
+
+
+### Documentation
+
+* extend message in readme.md ([24c041f](https://github.com/stefan-henning/poc-release-please/commit/24c041fb6c5671162002a57b301c726b5f153e06))
+
 ## [2.0.2](https://github.com/stefan-henning/poc-release-please/compare/v2.0.1...v2.0.2) (2026-01-28)
 
 
