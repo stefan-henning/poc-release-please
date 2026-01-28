@@ -778,7 +778,7 @@ cli = [
 
 [[package]]
 name = "mcu"
-version = "2.0.0"
+version = "2.0.1"
 source = { virtual = "." }
 dependencies = [
     { name = "aiofiles" },
@@ -832,7 +832,7 @@ requires-dist = [
     { name = "pyjwt", specifier = ">=2.10.1" },
     { name = "pymongo", specifier = ">=4.10.1" },
     { name = "python-dateutil", specifier = ">=2.9.0.post0" },
-    { name = "python-multipart", specifier = ">=0.0.22" },
+    { name = "python-multipart", specifier = ">=0.0.20" },
     { name = "requests-oauthlib", specifier = ">=2.0.0" },
     { name = "typing-inspect", specifier = ">=0.9.0" },
     { name = "uvicorn", specifier = ">=0.34.0" },
