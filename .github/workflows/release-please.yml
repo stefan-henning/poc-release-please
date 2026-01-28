@@ -35,7 +35,7 @@ jobs:
           
           # 2. Configure Git
           git config user.name "MCU Release Bot"
-          git config user.email "talos@fusiongbs.com"
+          git config user.email "ebonding@fusiongbs.com"
 
           # 3. Fetch changes and pull origin
           git fetch origin $PR_BRANCH
